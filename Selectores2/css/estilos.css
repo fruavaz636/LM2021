@@ -60,5 +60,45 @@ div#capa1 * {
 }
 
 div > a {
-    
+    border: 2px solid black;
+}
+
+a[href^="https"] {
+    text-transform: lowercase;
+}
+
+a[href$="pdf"] {
+    font-size: xx-small;
+}
+
+a[href*="triana"] {
+    background: bisque;
+}
+
+a[target=_blank] {
+    font-size: 50px;
+}
+
+div + p {
+    border: 2px dotted blue;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+input:enabled {
+    border: 2px solid blue;
+}
+
+input:disabled {
+    border: 2px solid red;
+}
+
+input:checked + span{
+    font-size: xx-large;
+}
+
+:not(p) {
+    text-decoration: overline;
 }
