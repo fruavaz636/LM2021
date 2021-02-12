@@ -80,8 +80,8 @@
                 </div>
               </nav>
         </header>
-        <section class="row justify-content-center mt-5">
-            <div class="col-md-9 mt-3">
+        <section class="row justify-content-center mt-1">
+            <div class="col-md-12 mt-1">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                       <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
@@ -110,13 +110,110 @@
                   </div>
             </div>
         </section>
+
+        <header class="row bg-dark text-center mt-3 mb-3">
+          <h1 class="text-uppercase text-white">Cursos ofertados</h1>
+        </header>
+
+        <section class="row">
+          <div class="col-sm-4 col-12">
+            <div class="card">
+              <a href="#" data-toggle="tooltip" title="Web oficial PHP" data-html="true">
+                <img src="imagenes/php_logo.png" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">Curso PHP</h3>
+                <h5 class="card-subtitle mb-3">Nivel Básico</h5>
+                <div class="card-text">
+                  Curso PHP para comenzar con el aprendizaje del lenguaje
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-12">
+            <div class="card">
+              <a href="#" data-toggle="tooltip" title="Web oficial MYSQL" data-html="true">
+                <img src="imagenes/mysql.png" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">Curso MYSQL</h3>
+                <h5 class="card-subtitle mb-3">Nivel Básico</h5>
+                <div class="card-text">
+                  Curso MYSQL para comenzar con el aprendizaje del lenguaje
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 col-12">
+            <div class="card">
+              <a href="#" data-toggle="tooltip" title="Web oficial JQUERY" data-html="true">
+                <img src="imagenes/jquery.png" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">Curso JQUERY</h3>
+                <h5 class="card-subtitle mb-3">Nivel Básico</h5>
+                <div class="card-text">
+                  Curso JQUERY para comenzar con el aprendizaje del lenguaje
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <header class="row bg-dark text-center mt-3 mb-3">
+          <h1 class="text-uppercase text-white">Nuestra Empresa</h1>
+        </header>
+
+        <section class="row">
+          <div class="col-md-5">
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action active" 
+                    data-bs-toggle="list" href="#datos" role="tab">Datos Empresa</a>
+              <a class="list-group-item list-group-item-action" 
+                    data-bs-toggle="list" href="#contacto" role="tab">Contactar</a>
+              <a class="list-group-item list-group-item-action" 
+                    data-bs-toggle="list" href="#mapa" role="tab">Como llegar</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" role="tabpanel" id="datos">                <h3>Datos de la Empresa</h3>
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Empresa S.A.</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Empresa de Cursos Online</h5>
+                    <p class="card-text">C\Nueva, 6 Sevilla 41001</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" role="tabpanel" id="contacto">
+                <h3>Enviar Mensaje</h3>
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+              <div class="tab-pane fade" role="tabpanel" id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3769.717595956911!2d-6.010169793899197!3d37.39120358824284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1613118445974!5m2!1ses!2ses" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
     </main>
 
 
     
-    <!-- SCRIPT PARA QUE FUNCIONEN DETERMINADOS COMPONENTES -->
-    <script>
-        $(function () {
+    <!-- SCRIPT PARA QUE FUNCIONEN DETERMCONTACTO
             //Habilita los tooltips
             $('[data-toggle="tooltip"]').tooltip({
                 container: 'body'
