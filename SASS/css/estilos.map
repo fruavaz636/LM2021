@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "estilos.css",
+	"sources": [
+		"../scss/estilos.scss",
+		"../scss/variables.scss"
+	],
+	"sourcesContent": [
+		"@import \"variables\";\n\n$bg-color: #df0174;\n$size: 1em;\n\nbody {\n    background-color: $bg-color;\n    margin: $size * 2;\n}\n\n#main {\n    width: 97%;\n    p, div {\n        font-size: 20px;\n        a {\n            text-decoration: none;\n        }\n    }\n    span {\n        font-size: 22px;\n    }\n}\n\na {\n    font-weight: bold;\n    &:hover {\n        text-decoration: none;\n    }\n}\n\n#main {\n    color: blue;\n    &-lateral {\n        color:green;\n    }\n}\n\n// Comentario de una línea\n\n.parrafo {\n    font: {\n        family: fantasy;\n        size: 20px;\n        weight: bold;\n    }\n}\n\n/*\n* Comentario de varias lineas que aparece\n* en el css final\n*/\n\np {\n    color: $color-texto; \n}\n\n@mixin tipo_enlace {\n    color: blue;\n    text-decoration: none;\n}\n\n#capa {\n    a {\n        @include tipo_enlace;\n    }\n}\n\n@mixin borde_capa($size: 2px) {\n    border-radius: $size;\n}\n\n#capa1 {\n    @include borde_capa(4px);\n}\n\n$ciudad: cadiz;\nspan {\n    @if $ciudad == sevilla {\n        color: white;\n    } @else if $ciudad == cadiz {\n        color: yellow;\n    } @else {\n        color: black;\n    }\n}\n\n@for $i from 1 to 4 {\n    .capa-#{$i} {border: #{$i}px solid black;}\n}",
+		"$color-texto: #ffffff;"
+	],
+	"names": [],
+	"mappings": ";AAKA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAJT,OAAO;EAKd,MAAM,EAAE,GAAS;CACpB;;;AAED,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,GAAG;CAUb;;;AAXD,AAEI,KAFC,CAED,CAAC,EAFL,KAAK,CAEE,GAAG,CAAC;EACH,SAAS,EAAE,IAAI;CAIlB;;;AAPL,AAIQ,KAJH,CAED,CAAC,CAEG,CAAC,EAJT,KAAK,CAEE,GAAG,CAEF,CAAC,CAAC;EACE,eAAe,EAAE,IAAI;CACxB;;;AANT,AAQI,KARC,CAQD,IAAI,CAAC;EACD,SAAS,EAAE,IAAI;CAClB;;;AAGL,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,IAAI;CAIpB;;;AALD,AAEI,CAFH,AAEI,MAAM,CAAC;EACJ,eAAe,EAAE,IAAI;CACxB;;;AAGL,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;CAId;;;AAHI,AAAD,aAAS,CAAC;EACN,KAAK,EAAC,KAAK;CACd;;;AAKL,AAAA,QAAQ,CAAC;EAED,WAAM,EAAE,OAAO;EACf,SAAI,EAAE,IAAI;EACV,WAAM,EAAE,IAAI;CAEnB;;AAED;;;EAGE;;AAEF,AAAA,CAAC,CAAC;EACE,KAAK,ECrDK,OAAO;CDsDpB;;;AAOD,AACI,KADC,CACD,CAAC,CAAC;EALF,KAAK,EAAE,IAAI;EACX,eAAe,EAAE,IAAI;CAMpB;;;AAOL,AAAA,MAAM,CAAC;EAHH,aAAa,EAIO,GAAG;CAC1B;;;AAGD,AAAA,IAAI,CAAC;EAIG,KAAK,EAAE,MAAM;CAIpB;;;AAGG,AAAA,OAAO,CAAK;EAAC,MAAM,EAAE,GAAS,CAAC,KAAK,CAAC,KAAK;CAAG;;;AAA7C,AAAA,OAAO,CAAK;EAAC,MAAM,EAAE,GAAS,CAAC,KAAK,CAAC,KAAK;CAAG;;;AAA7C,AAAA,OAAO,CAAK;EAAC,MAAM,EAAE,GAAS,CAAC,KAAK,CAAC,KAAK;CAAG"
+}

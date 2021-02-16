@@ -1,0 +1,94 @@
+/* line 6, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+body {
+  background-color: #df0174;
+  margin: 2em;
+}
+
+/* line 11, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+#main {
+  width: 97%;
+}
+
+/* line 13, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+#main p, #main div {
+  font-size: 20px;
+}
+
+/* line 15, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+#main p a, #main div a {
+  text-decoration: none;
+}
+
+/* line 19, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+#main span {
+  font-size: 22px;
+}
+
+/* line 24, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+a {
+  font-weight: bold;
+}
+
+/* line 26, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 31, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+#main {
+  color: blue;
+}
+
+/* line 33, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+#main-lateral {
+  color: green;
+}
+
+/* line 40, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+.parrafo {
+  font-family: fantasy;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*
+* Comentario de varias lineas que aparece
+* en el css final
+*/
+/* line 53, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+p {
+  color: #ffffff;
+}
+
+/* line 63, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+#capa a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* line 72, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+#capa1 {
+  border-radius: 4px;
+}
+
+/* line 77, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+span {
+  color: yellow;
+}
+
+/* line 88, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+.capa-1 {
+  border: 1px solid black;
+}
+
+/* line 88, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+.capa-2 {
+  border: 2px solid black;
+}
+
+/* line 88, ../../../REPOSITORIO/LM2021/SASS/scss/estilos.scss */
+.capa-3 {
+  border: 3px solid black;
+}
+
+/*# sourceMappingURL=estilos.css.map */
