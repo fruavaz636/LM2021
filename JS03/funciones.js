@@ -34,3 +34,65 @@ function mostrarFrase() {
     }
     document.getElementById("resultadoFrase").innerHTML = texto;
 }
+
+function calcularPotencia() {
+    var base = document.getElementById("base").value;
+    var exponente = document.getElementById("exponente").value;
+
+    var potencia = Math.pow(base,exponente);
+
+    document.getElementById("potencia").innerHTML = base + "^" + exponente + "=" + potencia;
+}
+
+function calcularIMC() {
+    var peso = document.getElementById("peso").value;
+    var altura = document.getElementById("altura").value;
+
+    var imc = peso / Math.pow(altura, 2);
+    var texto = "";
+
+    if (imc < 18.5) {
+        texto = "Peso insuficiente";
+    } else if (imc >= 18.5 && imc <=24.9) {
+        texto = "Normopeso";
+    } else if (imc >= 25 && imc <= 26.9) {
+        texto = "Sobrepeso grado I";
+    } else if (imc >= 27 && imc <= 29.9) {
+        texto = "Sobrepeso grado II (preobesidad)";
+    } else if (imc >= 30 && imc <= 34.9) {
+        texto = "Obesidad de tipo I";
+    } else if (imc >= 35 && imc <= 39.9) {
+        texto = "Obesidad de tipo II";
+    } else if (imc >= 40 && imc <= 49.9) {
+        texto = "Obesidad de tipo III (mórbida)";
+    } else {
+        texto = "Obesidad de tipo IV (extrema)";
+    }    
+
+    document.getElementById("resultadoIMC").innerHTML = texto;
+}
+
+var aleatorio= parseInt(Math.random() * 10);
+var intentos = 3;
+//alert(aleatorio);
+function comprobar() {
+    var numero = document.getElementById("numero").value;
+
+    var texto = "";
+
+    if (intentos > 0) {
+        if (numero == aleatorio) {
+            texto = "Has Acertado!!!";
+        } else if (numero > aleatorio) {
+            intentos = intentos - 1;
+            texto = "El número que buscas es menor y te quedan " + intentos + " intentos";            
+        } else {
+            intentos = intentos - 1;
+            texto = "El número que buscas es mayor y te quedan " + intentos + " intentos";            
+        }
+    } else {
+        texto = "Sin intentos";
+    }    
+
+    document.getElementById("resultadoAleatorio").innerHTML = texto;
+}
