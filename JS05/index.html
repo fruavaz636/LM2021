@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 05</title>
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+<body>
+    <table>
+        <caption>Tablas de Multiplicar</caption>
+        <tr>
+            <td><label for="numero">Número:</label></td>
+            <td><input type="number" name="numero" id="numero" autofocus></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="Mostrar Tablas" onclick="mostrarTablas(document.getElementById('numero').value)"></td>
+        </tr>
+    </table>
+    <div>
+        <span id="resultadoTabla"></span>
+    </div>
+</body>
+</html>
